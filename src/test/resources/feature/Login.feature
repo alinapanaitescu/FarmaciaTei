@@ -1,5 +1,6 @@
 Feature: Login
 
+  @Sanity
   Scenario: Successful login
     Given access link
     When click my account button

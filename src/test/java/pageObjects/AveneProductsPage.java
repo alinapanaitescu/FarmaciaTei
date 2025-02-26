@@ -7,17 +7,18 @@ import org.openqa.selenium.support.FindBy;
 public class AveneProductsPage extends BasePage {
     public AveneProductsPage(WebDriver driver) { super(driver); }
 
-    @FindBy(xpath = "//*[@id=\"server-products-grid\"]/div[4]/div[6]/div[2]/button")
+    @FindBy(xpath = "//button[@data-product-name='Concentrat anti-imperfectiuni pentru ten cu tendinta acneica Cleanance Comedomed, 30 ml, Avene']")
     WebElement AddToCartConcentratAntiImperfectiuni;
 
     public void clickAddToCartConcentratAntiImperfectiuni() {AddToCartConcentratAntiImperfectiuni.click();}
 
     @FindBy(xpath = "//*[@id=\"server-products-grid\"]/div[4]/a[1]/img")
+    //img[@alt='Concentrat anti-imperfectiuni pentru ten cu tendinta acneica Cleanance Comedomed, 30 ml, Avene']/ancestor::img[@class='icon-favorite']
     WebElement AddToWishList;
 
     public void clickAddToWishList() {AddToWishList.click();}
 
-    @FindBy(xpath = "//*[@id=\"server-products-grid\"]/div[4]/a[2]/picture/img")
+    @FindBy(xpath = "//img[@alt='Concentrat anti-imperfectiuni pentru ten cu tendinta acneica Cleanance Comedomed, 30 ml, Avene']")
     WebElement ProductDetails;
 
     public void clickProductDetails() {ProductDetails.click();}
