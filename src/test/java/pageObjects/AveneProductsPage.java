@@ -12,8 +12,7 @@ public class AveneProductsPage extends BasePage {
 
     public void clickAddToCartConcentratAntiImperfectiuni() {AddToCartConcentratAntiImperfectiuni.click();}
 
-    @FindBy(xpath = "//*[@id=\"server-products-grid\"]/div[4]/a[1]/img")
-    //img[@alt='Concentrat anti-imperfectiuni pentru ten cu tendinta acneica Cleanance Comedomed, 30 ml, Avene']/ancestor::img[@class='icon-favorite']
+    @FindBy(xpath = "//img[@alt='Concentrat anti-imperfectiuni pentru ten cu tendinta acneica Cleanance Comedomed, 30 ml, Avene']/ancestor::a/../a[1]")
     WebElement AddToWishList;
 
     public void clickAddToWishList() {AddToWishList.click();}
